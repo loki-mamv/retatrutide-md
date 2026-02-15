@@ -1420,6 +1420,15 @@
             
             if (!question) return;
             
+            // GA4: track question submission
+            if (typeof gtag === 'function') {
+              gtag('event', 'qa_question_asked', {
+                event_category: 'Q&A',
+                event_label: 'retatrutide.md',
+                question: question.substring(0, 100)
+              });
+            }
+            
             const suggestions = document.getElementById('qa-suggestions');
             if (suggestions) suggestions.style.display = 'none';
             
@@ -1505,10 +1514,15 @@
                     headers: { 'Content-Type': 'application/json', 'X-API-Key': '3460683416d20694dc8f05cdb01af378' },
                     body: JSON.stringify({ site: 'retatrutide.md', query: question, response: (fullText || fullResponse || '').slice(0, 500), session_id: SESSION_ID || null }),
                 }).catch(() => {});
-                // GA4 engagement events
+                // GA4 engagement events (reduces bounce rate)
                 if (typeof gtag === 'function') {
-                  gtag('event', 'qa_question_asked', { event_category: 'Q&A', event_label: 'retatrutide.md', value: 1 });
-                  gtag('event', 'qa_response_received', { event_category: 'Q&A', event_label: 'retatrutide.md', engagement_time_msec: 10000 });
+                  gtag('event', 'qa_answer_received', {
+                    event_category: 'Q&A',
+                    event_label: 'retatrutide.md',
+                    question: question.substring(0, 100),
+                    answer_length: (fullText || fullResponse || '').length,
+                    engagement_time_msec: 10000
+                  });
                 }
 
                 await new Promise(resolve => {
@@ -1543,6 +1557,16 @@
                 askQuestion();
             }
         });
+        
+        // GA4: track widget open
+        document.getElementById('qa-input').addEventListener('focus', function() {
+            if (typeof gtag === 'function') {
+                gtag('event', 'qa_widget_opened', {
+                    event_category: 'Q&A',
+                    event_label: 'retatrutide.md'
+                });
+            }
+        }, { once: true });
         
         document.getElementById('panel-input').addEventListener('keydown', (e) => {
             if (e.key === 'Enter' && !e.shiftKey) {
