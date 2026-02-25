@@ -42,7 +42,7 @@
           "mainEntityOfPage": {"@id": "https://retatrutide.md/blog/retatrutide-vs-tirzepatide-triple-dual-agonist/#article"},
           "wordCount": "666",
           "lastReviewed": "2026-02-14",
-          "reviewedBy": {"@type": "Organization", "name": "thrive.md Clinical Advisory Team"}
+          "reviewedBy": {"@type": "Person", "name": "Dr. Agustin Arrieta", "jobTitle": "MD"}
         },{"@type":"FAQPage","mainEntity":[{"@type": "Question", "name": "When will retatrutide be available?", "acceptedAnswer": {"@type": "Answer", "text": "Retatrutide is currently in Phase 3 clinical trials. If results are positive, FDA approval could come as early as 2027. This timeline is approximate and subject to change based on trial outcomes, regulatory review, and manufacturing readiness."}}, {"@type": "Question", "name": "Is retatrutide better than Ozempic or Mounjaro?", "acceptedAnswer": {"@type": "Answer", "text": "Phase 2 data suggests retatrutide produces greater weight loss than semaglutide (Ozempic/Wegovy) and comparable or greater loss than tirzepatide (Mounjaro/Zepbound). However, Phase 2 trials are smaller and shorter. Phase 3 data is needed for definitive comparisons. 'Better' also depends on individual factors like side effect tolerance and specific health conditions."}}, {"@type": "Question", "name": "Will insurance cover retatrutide?", "acceptedAnswer": {"@type": "Answer", "text": "It's too early to predict coverage. Current GLP-1 medications face inconsistent insurance coverage for obesity (better for diabetes). If retatrutide demonstrates superior outcomes and/or unique indications (like MASH), it may influence payer decisions. Pricing hasn't been announced."}}]}
       ]
     }
@@ -144,6 +144,11 @@
             .article-header h1 { font-size: 1.75rem; }
             .related-grid { grid-template-columns: 1fr; }
         }
+    
+        /* Medical Reviewer Badge */
+        .medical-reviewer { display: flex; align-items: center; gap: 0.4rem; margin-top: 0.75rem; padding: 0.5rem 0.75rem; background: #f0fdfa; border: 1px solid #ccfbf1; border-radius: 6px; font-size: 0.8rem; color: #0f766e; width: fit-content; }
+        .medical-reviewer svg { flex-shrink: 0; }
+        .medical-disclaimer { font-size: 0.75rem; color: var(--text-muted, #94a3b8); margin-top: 2rem; padding-top: 1rem; border-top: 1px solid var(--border, #e2e8f0); }
     </style>
 
     <script type="application/ld+json">
@@ -324,6 +329,7 @@
     <footer class="site-footer">
         <div class="container-wide">
             <div class="footer-links">
+                <a href="/about.html">About &amp; Editorial Policy</a>
                 <a href="https://thrive.md">thrive.md</a>
                 <a href="https://anxiety.md">anxiety.md</a>
                 <a href="https://depression.md">depression.md</a>

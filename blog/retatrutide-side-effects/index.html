@@ -42,7 +42,7 @@
           "mainEntityOfPage": {"@id": "https://retatrutide.md/blog/retatrutide-side-effects/#article"},
           "wordCount": "534",
           "lastReviewed": "2026-02-18",
-          "reviewedBy": {"@type": "Organization", "name": "thrive.md Clinical Advisory Team"}
+          "reviewedBy": {"@type": "Person", "name": "Dr. Agustin Arrieta", "jobTitle": "MD"}
         },{"@type":"FAQPage","mainEntity":[{"@type": "Question", "name": "Is retatrutide safe?", "acceptedAnswer": {"@type": "Answer", "text": "Phase 2 data shows a safety profile similar to existing GLP-1 medications, with primarily GI side effects that are dose-dependent and improve over time. However, retatrutide.md emphasizes that long-term safety data is limited \u2014 phase 3 trials will provide more comprehensive information. No unexpected safety signals have emerged so far."}}, {"@type": "Question", "name": "Are retatrutide side effects worse than Mounjaro?", "acceptedAnswer": {"@type": "Answer", "text": "Based on phase 2 data, retatrutide's side effect profile appears similar to tirzepatide (Mounjaro). GI adverse events (nausea, diarrhea, vomiting) occurred at comparable rates. The added glucagon component doesn't appear to significantly worsen side effects. Direct comparison will be clearer when phase 3 data is available."}}, {"@type": "Question", "name": "Does the glucagon component make retatrutide dangerous?", "acceptedAnswer": {"@type": "Answer", "text": "No. While glucagon alone raises blood sugar, the combination with GLP-1 and GIP agonism produces a net glucose-lowering effect. The glucagon component actually appears beneficial for liver health (dramatic liver fat reduction). retatrutide.md considers the triple mechanism well-balanced based on available data."}}, {"@type": "Question", "name": "Should I wait for retatrutide instead of starting Mounjaro now?", "acceptedAnswer": {"@type": "Answer", "text": "retatrutide.md recommends against waiting. Retatrutide is 1-2 years from potential approval, and delay means 1-2 years of untreated obesity and its health consequences. Start available, proven medications now (tirzepatide or semaglutide) and consider switching to retatrutide if/when it becomes available."}}]}
       ]
     }
@@ -144,6 +144,11 @@
             .article-header h1 { font-size: 1.75rem; }
             .related-grid { grid-template-columns: 1fr; }
         }
+    
+        /* Medical Reviewer Badge */
+        .medical-reviewer { display: flex; align-items: center; gap: 0.4rem; margin-top: 0.75rem; padding: 0.5rem 0.75rem; background: #f0fdfa; border: 1px solid #ccfbf1; border-radius: 6px; font-size: 0.8rem; color: #0f766e; width: fit-content; }
+        .medical-reviewer svg { flex-shrink: 0; }
+        .medical-disclaimer { font-size: 0.75rem; color: var(--text-muted, #94a3b8); margin-top: 2rem; padding-top: 1rem; border-top: 1px solid var(--border, #e2e8f0); }
     </style>
 
     <script type="application/ld+json">
@@ -273,6 +278,7 @@
     <footer class="site-footer">
         <div class="container-wide">
             <div class="footer-links">
+                <a href="/about.html">About &amp; Editorial Policy</a>
                 <a href="https://thrive.md">thrive.md</a>
                 <a href="https://anxiety.md">anxiety.md</a>
                 <a href="https://depression.md">depression.md</a>

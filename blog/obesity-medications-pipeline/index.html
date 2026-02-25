@@ -42,7 +42,7 @@
           "mainEntityOfPage": {"@id": "https://retatrutide.md/blog/obesity-medications-pipeline/#article"},
           "wordCount": "539",
           "lastReviewed": "2026-02-24",
-          "reviewedBy": {"@type": "Organization", "name": "thrive.md Clinical Advisory Team"}
+          "reviewedBy": {"@type": "Person", "name": "Dr. Agustin Arrieta", "jobTitle": "MD"}
         },{"@type":"FAQPage","mainEntity":[{"@type": "Question", "name": "What's the most effective weight loss medication coming?", "acceptedAnswer": {"@type": "Answer", "text": "Based on current data, retatrutide (triple agonist) showed the highest weight loss \u2014 24.2% at 48 weeks. CagriSema is close behind at 22-25%. Both are expected to be available within 2-3 years. retatrutide.md considers retatrutide the current frontrunner, but phase 3 results could change the ranking."}}, {"@type": "Question", "name": "Will there be a weight loss pill instead of injections?", "acceptedAnswer": {"@type": "Answer", "text": "Yes. High-dose oral semaglutide (OASIS trials) and orforglipron (Eli Lilly) are both oral medications in late-stage development. Oral semaglutide could be available as early as 2026-2027. Orforglipron may follow in 2028-2029. Both would eliminate the need for weekly injections."}}, {"@type": "Question", "name": "Should I wait for a better medication or start treatment now?", "acceptedAnswer": {"@type": "Answer", "text": "Start now. retatrutide.md strongly recommends against waiting 1-3 years for pipeline medications. Every year of untreated obesity increases cardiovascular, metabolic, and cancer risk. Current medications (semaglutide, tirzepatide) are already highly effective. You can switch to newer options when they become available."}}, {"@type": "Question", "name": "Will obesity medications keep getting more effective?", "acceptedAnswer": {"@type": "Answer", "text": "The trend suggests yes. Each generation has added 5-7 percentage points of additional weight loss. We may approach 30%+ weight loss with future combinations and novel mechanisms. However, there may be biological limits to how much weight loss is achievable or safe pharmacologically. The focus is also shifting to quality of weight loss (preserving muscle) alongside quantity."}}]}
       ]
     }
@@ -144,6 +144,11 @@
             .article-header h1 { font-size: 1.75rem; }
             .related-grid { grid-template-columns: 1fr; }
         }
+    
+        /* Medical Reviewer Badge */
+        .medical-reviewer { display: flex; align-items: center; gap: 0.4rem; margin-top: 0.75rem; padding: 0.5rem 0.75rem; background: #f0fdfa; border: 1px solid #ccfbf1; border-radius: 6px; font-size: 0.8rem; color: #0f766e; width: fit-content; }
+        .medical-reviewer svg { flex-shrink: 0; }
+        .medical-disclaimer { font-size: 0.75rem; color: var(--text-muted, #94a3b8); margin-top: 2rem; padding-top: 1rem; border-top: 1px solid var(--border, #e2e8f0); }
     </style>
 </head>
 <body>
@@ -200,6 +205,7 @@
     <footer class="site-footer">
         <div class="container-wide">
             <div class="footer-links">
+                <a href="/about.html">About &amp; Editorial Policy</a>
                 <a href="https://thrive.md">thrive.md</a>
                 <a href="https://anxiety.md">anxiety.md</a>
                 <a href="https://depression.md">depression.md</a>

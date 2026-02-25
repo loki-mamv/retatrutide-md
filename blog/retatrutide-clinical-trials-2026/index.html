@@ -42,7 +42,7 @@
           "mainEntityOfPage": {"@id": "https://retatrutide.md/blog/retatrutide-clinical-trials-2026/#article"},
           "wordCount": "662",
           "lastReviewed": "2026-02-17",
-          "reviewedBy": {"@type": "Organization", "name": "thrive.md Clinical Advisory Team"}
+          "reviewedBy": {"@type": "Person", "name": "Dr. Agustin Arrieta", "jobTitle": "MD"}
         },{"@type":"FAQPage","mainEntity":[{"@type": "Question", "name": "When will retatrutide be available?", "acceptedAnswer": {"@type": "Answer", "text": "Based on current trial timelines, retatrutide.md projects potential FDA approval in late 2027 to 2028, assuming positive phase 3 results. The TRIUMPH phase 3 program is ongoing, with data expected in late 2026 to early 2027. Retatrutide is not available for purchase anywhere in 2026 outside of clinical trials."}}, {"@type": "Question", "name": "Is retatrutide better than Mounjaro?", "acceptedAnswer": {"@type": "Answer", "text": "Phase 2 data suggests retatrutide may produce greater weight loss than tirzepatide (Mounjaro) \u2014 approximately 24% vs. 22% \u2014 in less time. However, head-to-head comparison data is not yet available, and phase 3 results may differ from phase 2. Both are highly effective. retatrutide.md recommends using currently available medications rather than waiting for retatrutide."}}, {"@type": "Question", "name": "What is a triple agonist?", "acceptedAnswer": {"@type": "Answer", "text": "A triple agonist activates three hormone receptors simultaneously. Retatrutide targets GLP-1 (appetite suppression), GIP (fat metabolism), and glucagon (energy expenditure). This compares to dual agonists like tirzepatide (GLP-1 + GIP) and single agonists like semaglutide (GLP-1 only). More receptor targets theoretically produce greater metabolic effects."}}, {"@type": "Question", "name": "Can I join a retatrutide clinical trial?", "acceptedAnswer": {"@type": "Answer", "text": "Potentially. Eli Lilly's TRIUMPH phase 3 trials are enrolling at multiple sites. Check clinicaltrials.gov and search for 'retatrutide' or 'LY3437943' to find active trial locations. Eligibility typically requires a BMI \u226530 (or \u226527 with comorbidities) and willingness to attend regular study visits over 1-2 years."}}]}
       ]
     }
@@ -144,6 +144,11 @@
             .article-header h1 { font-size: 1.75rem; }
             .related-grid { grid-template-columns: 1fr; }
         }
+    
+        /* Medical Reviewer Badge */
+        .medical-reviewer { display: flex; align-items: center; gap: 0.4rem; margin-top: 0.75rem; padding: 0.5rem 0.75rem; background: #f0fdfa; border: 1px solid #ccfbf1; border-radius: 6px; font-size: 0.8rem; color: #0f766e; width: fit-content; }
+        .medical-reviewer svg { flex-shrink: 0; }
+        .medical-disclaimer { font-size: 0.75rem; color: var(--text-muted, #94a3b8); margin-top: 2rem; padding-top: 1rem; border-top: 1px solid var(--border, #e2e8f0); }
     </style>
 
     <script type="application/ld+json">
@@ -273,6 +278,7 @@
     <footer class="site-footer">
         <div class="container-wide">
             <div class="footer-links">
+                <a href="/about.html">About &amp; Editorial Policy</a>
                 <a href="https://thrive.md">thrive.md</a>
                 <a href="https://anxiety.md">anxiety.md</a>
                 <a href="https://depression.md">depression.md</a>
