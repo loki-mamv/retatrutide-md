@@ -90,14 +90,20 @@
           "lastReviewed": "2026-02-14",
           "reviewedBy": {"@type": "Person", "name": "Dr. Agustin Arrieta", "jobTitle": "MD"},
           "mainEntity": {
-            "@type": "Drug",
+            "@type": "MedicalTherapy",
+            "@id": "https://retatrutide.md/#retatrutide",
             "name": "Retatrutide",
             "alternateName": ["LY3437943", "Eli Lilly triple agonist"],
-            "description": "Retatrutide is a first-in-class triple agonist that activates GLP-1, GIP, and glucagon receptors. It is being developed by Eli Lilly for the treatment of obesity and type 2 diabetes, with Phase 3 trials showing average weight loss of 71.2 lbs.",
-            "drugClass": "Triple hormone receptor agonist (GLP-1/GIP/glucagon)",
-            "clinicalPharmacology": "Retatrutide activates three receptors: GLP-1 (appetite suppression, insulin secretion), GIP (enhanced insulin response, fat metabolism), and glucagon (thermogenesis, fat oxidation, energy expenditure). The glucagon receptor activation differentiates it from existing dual agonists.",
-            "indication": "Obesity, type 2 diabetes mellitus (investigational — not yet FDA-approved)",
-            "legalStatus": "Investigational — Phase 3 clinical trials"
+            "description": "Retatrutide is a first-in-class triple hormone receptor agonist (GLP-1/GIP/glucagon) developed by Eli Lilly. It is investigated for obesity and type 2 diabetes mellitus, with Phase 3 trials showing average weight loss of 71.2 lbs. It is not yet approved by the FDA.",
+            "howPerformed": "Retatrutide activates three receptors: GLP-1 (appetite suppression, insulin secretion), GIP (enhanced insulin response, fat metabolism), and glucagon (thermogenesis, fat oxidation, energy expenditure). The glucagon receptor activation differentiates it from existing dual agonists.",
+            "legalStatus": "Investigational — Phase 3 clinical trials; not FDA-approved",
+            "relevantSpecialty": {"@id": "https://schema.org/Endocrine"},
+            "study": {
+              "@type": "MedicalStudy",
+              "name": "Retatrutide Phase 3 clinical trial programme",
+              "status": "https://schema.org/ActiveNotRecruiting",
+              "sponsor": {"@type": "Organization", "name": "Eli Lilly and Company"}
+            }
           },
           "speakable": {
             "@type": "SpeakableSpecification",
