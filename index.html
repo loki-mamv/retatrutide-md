@@ -62,110 +62,132 @@
     
     <!-- Schema.org Structured Data -->
     <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
     {
-      "@context": "https://schema.org",
-      "@graph": [
-        {
-          "@type": "Organization",
-          "@id": "https://thrive.md/#organization",
-          "name": "thrive.md",
-          "url": "https://thrive.md",
-          "description": "A network of premium health domains providing evidence-based medical information."
+      "@type": "Organization",
+      "@id": "https://thrive.md/#organization",
+      "name": "thrive.md",
+      "url": "https://thrive.md",
+      "description": "A network of premium health domains providing evidence-based medical information."
+    },
+    {
+      "@type": "WebSite",
+      "@id": "https://retatrutide.md/#website",
+      "url": "https://retatrutide.md",
+      "name": "retatrutide.md — Retatrutide Triple Agonist Information",
+      "publisher": {
+        "@id": "https://thrive.md/#organization"
+      },
+      "isPartOf": {
+        "@id": "https://thrive.md/#organization"
+      }
+    },
+    {
+      "@type": "MedicalWebPage",
+      "@id": "https://retatrutide.md/#webpage",
+      "name": "Retatrutide: The First Triple Agonist for Weight Loss and Diabetes",
+      "description": "Comprehensive guide to retatrutide (LY3437943), Eli Lilly's first-in-class triple agonist targeting GLP-1, GIP, and glucagon receptors for obesity and type 2 diabetes.",
+      "url": "https://retatrutide.md/",
+      "isPartOf": {
+        "@id": "https://retatrutide.md/#website"
+      },
+      "lastReviewed": "2026-02-14",
+      "reviewedBy": {
+        "@type": "Person",
+        "name": "Dr. Agustin Arrieta",
+        "jobTitle": "MD"
+      },
+      "mainEntity": {
+        "@type": "MedicalTherapy",
+        "@id": "https://retatrutide.md/#retatrutide",
+        "name": "Retatrutide",
+        "alternateName": [
+          "LY3437943",
+          "Eli Lilly triple agonist"
+        ],
+        "description": "Retatrutide is a first-in-class triple hormone receptor agonist (GLP-1/GIP/glucagon) developed by Eli Lilly. It is investigated for obesity and type 2 diabetes mellitus, with Phase 3 trials showing average weight loss of 71.2 lbs. It is not yet approved by the FDA.",
+        "howPerformed": "Retatrutide activates three receptors: GLP-1 (appetite suppression, insulin secretion), GIP (enhanced insulin response, fat metabolism), and glucagon (thermogenesis, fat oxidation, energy expenditure). The glucagon receptor activation differentiates it from existing dual agonists.",
+        "legalStatus": "Investigational — Phase 3 clinical trials; not FDA-approved",
+        "relevantSpecialty": {
+          "@id": "https://schema.org/Endocrine"
         },
+        "study": {
+          "@type": "MedicalStudy",
+          "name": "Retatrutide Phase 3 clinical trial programme",
+          "status": "https://schema.org/ActiveNotRecruiting",
+          "sponsor": {
+            "@type": "Organization",
+            "name": "Eli Lilly and Company"
+          }
+        }
+      },
+      "speakable": {
+        "@type": "SpeakableSpecification",
+        "cssSelector": [
+          "h1",
+          ".stat-number",
+          ".hero-subtitle"
+        ]
+      }
+    },
+    {
+      "@type": "FAQPage",
+      "@id": "https://retatrutide.md/#faq",
+      "mainEntity": [
         {
-          "@type": "WebSite",
-          "@id": "https://retatrutide.md/#website",
-          "url": "https://retatrutide.md",
-          "name": "retatrutide.md — Retatrutide Triple Agonist Information",
-          "publisher": {"@id": "https://thrive.md/#organization"},
-          "isPartOf": {"@id": "https://thrive.md/#organization"}
-        },
-        {
-          "@type": "MedicalWebPage",
-          "@id": "https://retatrutide.md/#webpage",
-          "name": "Retatrutide: The First Triple Agonist for Weight Loss and Diabetes",
-          "description": "Comprehensive guide to retatrutide (LY3437943), Eli Lilly's first-in-class triple agonist targeting GLP-1, GIP, and glucagon receptors for obesity and type 2 diabetes.",
-          "url": "https://retatrutide.md/",
-          "isPartOf": {"@id": "https://retatrutide.md/#website"},
-          "lastReviewed": "2026-02-14",
-          "reviewedBy": {"@type": "Person", "name": "Dr. Agustin Arrieta", "jobTitle": "MD"},
-          "mainEntity": {
-            "@type": "MedicalTherapy",
-            "@id": "https://retatrutide.md/#retatrutide",
-            "name": "Retatrutide",
-            "alternateName": ["LY3437943", "Eli Lilly triple agonist"],
-            "description": "Retatrutide is a first-in-class triple hormone receptor agonist (GLP-1/GIP/glucagon) developed by Eli Lilly. It is investigated for obesity and type 2 diabetes mellitus, with Phase 3 trials showing average weight loss of 71.2 lbs. It is not yet approved by the FDA.",
-            "howPerformed": "Retatrutide activates three receptors: GLP-1 (appetite suppression, insulin secretion), GIP (enhanced insulin response, fat metabolism), and glucagon (thermogenesis, fat oxidation, energy expenditure). The glucagon receptor activation differentiates it from existing dual agonists.",
-            "legalStatus": "Investigational — Phase 3 clinical trials; not FDA-approved",
-            "relevantSpecialty": {"@id": "https://schema.org/Endocrine"},
-            "study": {
-              "@type": "MedicalStudy",
-              "name": "Retatrutide Phase 3 clinical trial programme",
-              "status": "https://schema.org/ActiveNotRecruiting",
-              "sponsor": {"@type": "Organization", "name": "Eli Lilly and Company"}
-            }
-          },
-          "speakable": {
-            "@type": "SpeakableSpecification",
-            "cssSelector": ["h1", ".stat-number", ".hero-subtitle"]
+          "@type": "Question",
+          "name": "What is retatrutide?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Retatrutide (LY3437943) is a first-in-class triple hormone receptor agonist developed by Eli Lilly. It activates three receptors simultaneously: GLP-1 (glucagon-like peptide-1), GIP (glucose-dependent insulinotropic polypeptide), and glucagon receptors. This triple mechanism is designed to provide superior weight loss and metabolic benefits compared to existing single (semaglutide) or dual (tirzepatide) agonists."
           }
         },
         {
-          "@type": "FAQPage",
-          "@id": "https://retatrutide.md/#faq",
-          "mainEntity": [
-            {
-              "@type": "Question",
-              "name": "What is retatrutide?",
-              "acceptedAnswer": {
-                "@type": "Answer",
-                "text": "Retatrutide (LY3437943) is a first-in-class triple hormone receptor agonist developed by Eli Lilly. It activates three receptors simultaneously: GLP-1 (glucagon-like peptide-1), GIP (glucose-dependent insulinotropic polypeptide), and glucagon receptors. This triple mechanism is designed to provide superior weight loss and metabolic benefits compared to existing single (semaglutide) or dual (tirzepatide) agonists."
-              }
-            },
-            {
-              "@type": "Question",
-              "name": "How is retatrutide different from Ozempic or Mounjaro?",
-              "acceptedAnswer": {
-                "@type": "Answer",
-                "text": "Ozempic (semaglutide) targets only the GLP-1 receptor. Mounjaro (tirzepatide) targets two receptors: GLP-1 and GIP. Retatrutide targets all three: GLP-1, GIP, AND glucagon receptors. The addition of glucagon receptor activation promotes thermogenesis (heat production) and fat oxidation, potentially leading to greater weight loss. Phase 3 trials show retatrutide achieves an average of 71.2 lbs weight loss, exceeding results seen with either Ozempic or Mounjaro."
-              }
-            },
-            {
-              "@type": "Question",
-              "name": "When will retatrutide be available?",
-              "acceptedAnswer": {
-                "@type": "Answer",
-                "text": "Retatrutide is currently in Phase 3 clinical trials. Initial Phase 3 results were reported in December 2025, with seven additional Phase 3 trials expected to complete in 2026. If trials are successful, Eli Lilly could submit for FDA approval in late 2026, with potential approval and availability in late 2026 or 2027."
-              }
-            },
-            {
-              "@type": "Question",
-              "name": "What are the side effects of retatrutide?",
-              "acceptedAnswer": {
-                "@type": "Answer",
-                "text": "Retatrutide has a similar gastrointestinal side effect profile to other GLP-1 medications. The most common side effects in clinical trials include nausea (up to 45%), diarrhea (up to 28%), vomiting (up to 22%), constipation, and decreased appetite. Most side effects are mild to moderate and tend to improve over time with continued use."
-              }
-            },
-            {
-              "@type": "Question",
-              "name": "How much weight can you lose on retatrutide?",
-              "acceptedAnswer": {
-                "@type": "Answer",
-                "text": "In the Phase 3 TRIUMPH-3 trial (December 2025), participants on retatrutide lost an average of 71.2 lbs (approximately 24% of body weight) over 48 weeks at the highest dose (12 mg). In the earlier Phase 2 trial, participants lost up to 24.2% of body weight at 48 weeks, with some losing over 30%. These results exceed those seen with any currently approved weight loss medication."
-              }
-            },
-            {
-              "@type": "Question",
-              "name": "Who might be eligible for retatrutide?",
-              "acceptedAnswer": {
-                "@type": "Answer",
-                "text": "While retatrutide is not yet approved, clinical trials have enrolled adults with obesity (BMI ≥30) or overweight (BMI ≥27) with at least one weight-related comorbidity. Separate trials are studying retatrutide for type 2 diabetes, obstructive sleep apnea, osteoarthritis, and metabolic dysfunction-associated steatohepatitis (MASH). Eligibility criteria for the eventual approved medication will be determined by the FDA."
-              }
-            }
-          ]
+          "@type": "Question",
+          "name": "How is retatrutide different from Ozempic or Mounjaro?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Ozempic (semaglutide) targets only the GLP-1 receptor. Mounjaro (tirzepatide) targets two receptors: GLP-1 and GIP. Retatrutide targets all three: GLP-1, GIP, AND glucagon receptors. The addition of glucagon receptor activation promotes thermogenesis (heat production) and fat oxidation, potentially leading to greater weight loss. Phase 3 trials show retatrutide achieves an average of 71.2 lbs weight loss, exceeding results seen with either Ozempic or Mounjaro."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "When will retatrutide be available?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Retatrutide is currently in Phase 3 clinical trials. Initial Phase 3 results were reported in December 2025, with seven additional Phase 3 trials expected to complete in 2026. If trials are successful, Eli Lilly could submit for FDA approval in late 2026, with potential approval and availability in late 2026 or 2027."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What are the side effects of retatrutide?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Retatrutide has a similar gastrointestinal side effect profile to other GLP-1 medications. The most common side effects in clinical trials include nausea (up to 45%), diarrhea (up to 28%), vomiting (up to 22%), constipation, and decreased appetite. Most side effects are mild to moderate and tend to improve over time with continued use."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How much weight can you lose on retatrutide?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "In the Phase 3 TRIUMPH-3 trial (December 2025), participants on retatrutide lost an average of 71.2 lbs (approximately 24% of body weight) over 48 weeks at the highest dose (12 mg). In the earlier Phase 2 trial, participants lost up to 24.2% of body weight at 48 weeks, with some losing over 30%. These results exceed those seen with any currently approved weight loss medication."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Who might be eligible for retatrutide?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "While retatrutide is not yet approved, clinical trials have enrolled adults with obesity (BMI ≥30) or overweight (BMI ≥27) with at least one weight-related comorbidity. Separate trials are studying retatrutide for type 2 diabetes, obstructive sleep apnea, osteoarthritis, and metabolic dysfunction-associated steatohepatitis (MASH). Eligibility criteria for the eventual approved medication will be determined by the FDA."
+          }
         }
       ]
     }
+  ]
+}
     </script>
     
     <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Ctext x='16' y='24' font-family='-apple-system,system-ui,sans-serif' font-weight='800' font-size='16' fill='%230d9488' text-anchor='middle' letter-spacing='-0.5'%3E.md%3C/text%3E%3C/svg%3E">
@@ -1361,7 +1383,32 @@
             
             <p class="last-reviewed"><strong>Last reviewed:</strong> February 2026 by the thrive.md Clinical Advisory Team</p>
         </section>
-
+        <section class="section" id="faq">
+            <div class="section-label" style="font-size: 12px; font-weight: 600; color: var(--accent, #0d9488); text-transform: uppercase; letter-spacing: 1px; margin-bottom: 12px;">FAQ</div>
+            <h2>Frequently asked questions</h2>
+            <div style="margin-top: 20px;">
+                <div style="border-bottom: 1px solid var(--border, #e2e8f0); padding: 20px 0;">
+                    <h3 style="font-size: 17px; font-weight: 600; margin-bottom: 8px; font-family: var(--font-display, Georgia, serif);">What is retatrutide?</h3>
+                    <p style="font-size: 16px; color: var(--text-secondary, #475569); margin: 0;">Retatrutide (LY3437943) is a first-in-class triple hormone receptor agonist developed by Eli Lilly. It activates three receptors simultaneously: GLP-1 (glucagon-like peptide-1), GIP (glucose-dependent insulinotropic polypeptide), and glucagon receptors. This triple mechanism is designed to provide superior weight loss and metabolic benefits compared to existing single (semaglutide) or dual (tirzepatide) agonists.</p>
+                </div>
+                <div style="border-bottom: 1px solid var(--border, #e2e8f0); padding: 20px 0;">
+                    <h3 style="font-size: 17px; font-weight: 600; margin-bottom: 8px; font-family: var(--font-display, Georgia, serif);">How is retatrutide different from Ozempic or Mounjaro?</h3>
+                    <p style="font-size: 16px; color: var(--text-secondary, #475569); margin: 0;">Ozempic (semaglutide) targets only the GLP-1 receptor. Mounjaro (tirzepatide) targets two receptors: GLP-1 and GIP. Retatrutide targets all three: GLP-1, GIP, AND glucagon receptors. The addition of glucagon receptor activation promotes thermogenesis (heat production) and fat oxidation, potentially leading to greater weight loss. Phase 3 trials show retatrutide achieves an average of 71.2 lbs weight loss, exceeding results seen with either Ozempic or Mounjaro.</p>
+                </div>
+                <div style="border-bottom: 1px solid var(--border, #e2e8f0); padding: 20px 0;">
+                    <h3 style="font-size: 17px; font-weight: 600; margin-bottom: 8px; font-family: var(--font-display, Georgia, serif);">What are the side effects of retatrutide?</h3>
+                    <p style="font-size: 16px; color: var(--text-secondary, #475569); margin: 0;">Retatrutide has a similar gastrointestinal side effect profile to other GLP-1 medications. The most common side effects in clinical trials include nausea (up to 45%), diarrhea (up to 28%), vomiting (up to 22%), constipation, and decreased appetite. Most side effects are mild to moderate and tend to improve over time with continued use.</p>
+                </div>
+                <div style="border-bottom: 1px solid var(--border, #e2e8f0); padding: 20px 0;">
+                    <h3 style="font-size: 17px; font-weight: 600; margin-bottom: 8px; font-family: var(--font-display, Georgia, serif);">How much weight can you lose on retatrutide?</h3>
+                    <p style="font-size: 16px; color: var(--text-secondary, #475569); margin: 0;">In the Phase 3 TRIUMPH-3 trial (December 2025), participants on retatrutide lost an average of 71.2 lbs (approximately 24% of body weight) over 48 weeks at the highest dose (12 mg). In the earlier Phase 2 trial, participants lost up to 24.2% of body weight at 48 weeks, with some losing over 30%. These results exceed those seen with any currently approved weight loss medication.</p>
+                </div>
+                <div style="border-bottom: 1px solid var(--border, #e2e8f0); padding: 20px 0;">
+                    <h3 style="font-size: 17px; font-weight: 600; margin-bottom: 8px; font-family: var(--font-display, Georgia, serif);">Who might be eligible for retatrutide?</h3>
+                    <p style="font-size: 16px; color: var(--text-secondary, #475569); margin: 0;">While retatrutide is not yet approved, clinical trials have enrolled adults with obesity (BMI ≥30) or overweight (BMI ≥27) with at least one weight-related comorbidity. Separate trials are studying retatrutide for type 2 diabetes, obstructive sleep apnea, osteoarthritis, and metabolic dysfunction-associated steatohepatitis (MASH). Eligibility criteria for the eventual approved medication will be determined by the FDA.</p>
+                </div>
+            </div>
+        </section>
 
         <section class="section" id="related">
             <div class="section-label" style="font-size: 12px; font-weight: 600; color: var(--accent, #0d9488); text-transform: uppercase; letter-spacing: 1px; margin-bottom: 12px;">Related Topics</div>
